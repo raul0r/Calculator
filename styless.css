@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0e5ec;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Calculator {
+    background-color: #e0e5ec;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 9px 9px 16px #b8b9be, -9px -9px 16px #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+    gap: 20px;
+    align-items: center;
+}
+
+.input {
+    grid-column: span 4;
+    height: 70px;
+    width: 280px;
+    background-color: #e0e5ec;
+    box-shadow: inset 5px 5px 10px #b8b9be, inset -5px -5px 10px #ffffff;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    font-size: 36px;
+    text-align: end;
+    padding: 15px;
+    outline: none;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px #b8b9be, inset -5px -5px 10px #ffffff;
+}
+
+.equal {
+    grid-column: span 2;  /* Make equal button double the width */
+    width: 140px;          /* Adjusted to take up more space */
+    height: 60px;
+    border-radius: 30px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff;
+}
